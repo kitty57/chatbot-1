@@ -3,10 +3,8 @@ import os
 import joblib
 import streamlit as st
 import google.generativeai as genai
-from dotenv import load_dotenv
-load_dotenv()
-GOOGLE_API_KEY=os.environ.get('GOOGLE_API_KEY')
-genai.configure(api_key=GOOGLE_API_KEY)
+
+genai.configure(api_key="AIzaSyDlBFVsmV8pao6Ax-bcR0dc5h4CusiNCsc")
 
 new_chat_id = f'{time.time()}'
 MODEL_ROLE = 'ai'
