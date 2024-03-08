@@ -25,7 +25,7 @@ except:
 
 # Sidebar allows a list of past chats
 with st.sidebar:
-    st.write('# Past Chats')
+    st.write('# history')
     if st.session_state.get('chat_id') is None:
         st.session_state.chat_id = st.selectbox(
             label='Pick a past chat',
@@ -46,7 +46,7 @@ with st.sidebar:
     # TODO: Give user a chance to name chat
     st.session_state.chat_title = f'ChatSession-{st.session_state.chat_id}'
 
-st.write('# Chat with Gemini')
+st.write('# My chatbot')
 
 # Chat history (allows to ask multiple questions)
 try:
